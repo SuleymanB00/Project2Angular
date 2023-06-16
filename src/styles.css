@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Oswald:wght@500&display=swap');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+*{
+    font-family: 'Open Sans', sans-serif;
+
+}
+.cont{
+    width: 80%;
+    margin: 15px auto;
+    border: 1px solid #3f51b5;
+    box-shadow: 0 2px 5px 0 rgba(0, 0,0,.24,);
+    padding: 20px;
+
+
+}
+h1{
+    text-align: center;
+    background: #3f51b5;
+    margin: 0;
+    padding: 5px;
+    color: #fff;
+}

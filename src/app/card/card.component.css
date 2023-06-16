@@ -1,0 +1,83 @@
+.example-card {
+    max-width: 286px;
+    min-height: 545px;
+    transition: .3s;
+  }
+  .addshadow{
+    box-shadow:0 12px 15px 0rgba(0,0,0,0.24);
+    z-index:1;
+  }
+  .myheader {
+background: #7cc576;
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+  }
+  .stars{
+    text-align: center;
+    position: relative;
+    top: -30px;
+    color: #ccc;
+  }
+  .addstars{
+    animation: flyStars.5s;
+    color:#f63430
+  }
+  @keyframes flyStars{   
+  0%{opacity:0}
+  50%{opacity:0}
+  70%{
+    opacity:1;
+  transform:translatex(0)
+}
+  100%{
+    opacity:1;
+    transform:translatex(0)
+  }
+  }
+  mat-card-conten p{
+    text-align: center;
+    font-weight: 600;
+    line-height: .8;
+    color: #333;
+  }
+  .price{
+    font-size: 1.5em;
+    color: #f00;
+    font-style: normal;
+  }
+  ul{
+    text-align: center;
+    padding: 0;
+
+  }
+  li{display: inline;}
+  li:nth-child(1) {color: #ee1313;}
+  li:nth-child(2) {color: #7cc576;}
+  li:nth-child(3) {color: #000000;}
+  .mybutton{
+    margin: 0;
+    width: 100%;
+    font-weight: 600;
+    background: #ccc;
+    display:flex;
+    justify-content: center;
+  }
+  .addbutton{
+    background:#f63440;
+    transition: .5s;
+  }
+  p a{
+    display: block;
+    /* width: 100%; */
+    padding: 10px;
+    /* height: 100%; */
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+
+  }
+  .mybutton:hover{
+    background: #000;
+  }

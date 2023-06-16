@@ -1,0 +1,51 @@
+<div class="cont">
+    <h1>Пример card</h1>
+
+     <mat-card class="example-card" (mouseenter)="toggleElement(showElement.myelement)" 
+     (mouseleave)="toggleElement(showElement.myelement)"  [ngClass]="{'addshadow':showElement.myelement}" >
+    <mat-card-header>
+      <div mat-card-avatar title="Подарочный сертификат" 
+       class="myheader">
+      <mat-icon>card_giftcard</mat-icon> 
+    </div>
+      <mat-card-title>Туфли летние</mat-card-title>
+      <mat-card-subtitle>Rieker Men</mat-card-subtitle>
+    </mat-card-header>
+
+    <a href="#" title="Туфли летние Rieker Men">
+    <img mat-card-image src="assets/images/13.jpg" alt="Rieker Men">
+    </a>
+
+
+    <mat-card-content>
+        <div class="stars" [ngClass]="{'addstars':showElement.myelement}">
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star_half</mat-icon>
+            <mat-icon>star_border</mat-icon>
+
+
+        
+    
+    </div>
+    <p> натуральная кожа </p>
+    <p>Ограниченная серия </p>
+    <p>
+        <span class="price" >1,500Byn
+            <div class=""></div>
+        </span>
+    </p>
+    <ul>
+        <li><button  mat-icon-button><mat-icon>lens</mat-icon></button></li>
+        <li><button  mat-icon-button><mat-icon>lens</mat-icon></button></li>
+        <li><button  mat-icon-button><mat-icon>lens</mat-icon></button></li>
+    </ul>
+    </mat-card-content>
+
+    <mat-card-actions>
+    <p title="Добавить товар в корзину" class="mybutton" [ngClass]="{'addbutton':showElement.myelement}"><a href="#">Добавить в корзину</a> </p>
+    </mat-card-actions>
+  </mat-card>
+</div>
+  
